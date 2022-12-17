@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::selection{
+    color: #03e9f4;
+}
+
 body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +24,8 @@ body{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    position: relative;
 }
 
 .logo{
@@ -29,25 +34,25 @@ body{
     font-size: 30px;
     text-decoration: none;
     font-weight: bolder;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .logo:hover{
-    color: aqua;
+    color:#03e9f4;
 }
 
 .nav{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 520px;
     font-size: 20px;
     letter-spacing: 3px;
 }
 
 .nav-item{
     list-style: none;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .nav-item:hover{
@@ -56,11 +61,10 @@ body{
 
 .nav-link{
     color: white;
-    text-decoration: none;
-    margin: 0;  
-    transition: 0.5s ease-in-out ;  
+    text-decoration: none;  
+    transition: 0.2s ease-in-out ;  
 }
 
 .nav-link:hover{
-    color: aqua;
+    color: #03e9f4;
 }
