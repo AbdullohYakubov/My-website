@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@
 
 body{
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: 'Montserrat', sans-serif;  
 }
 
 .container{
@@ -36,7 +39,6 @@ body{
 }
 
 .logo{
-    margin: 0;
     color: white;
     font-size: 30px;
     text-decoration: none;
@@ -54,43 +56,51 @@ body{
     align-items: center;
     width: 500px;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .nav-item{
     list-style: none;
-    transition: 0.2s ease-in-out;
-}
-
-.nav-item:hover{
-    transform: scale(1.2);
 }
 
 .nav-link{
     color: white;
     text-decoration: none;  
-    transition: 0.2s ease-in-out ;  
+    transition: 0.4s ease-in-out; 
 }
 
 .nav-link:hover{
     color: #03e9f4;
 }
 
+.underline{
+    width: 10%;
+    background-color: black;
+    height: 2px;
+    margin: 5px 0;
+    transition: 0.4s ease-in-out
+}
+
+.nav-item:hover > .underline{
+    background-color: #03e9f4;
+    width: 100%;
+}
+
 .portfolio_title{
     color: white;
     margin-top: 80px;
     font-size: 50px;
-    font-family: sans-serif;
     letter-spacing: 3px;
     text-align: center;
+    cursor: default;
 }
 
 .portfolio_desc{
     color: #04E6F1;
-    font-family: sans-serif;
     font-size: 30px;
     text-align: center;
     margin-top: 20px;
+    cursor: default;
 }
 
 .boxes{
@@ -111,7 +121,6 @@ body{
 }
 
 .boxes_right_title{
-    font-family: sans-serif;
     color: white;
     letter-spacing: 1px;
     font-size: 30px;
@@ -120,7 +129,6 @@ body{
 
 .boxes_right_description{
     color: rgb(170, 170, 170);
-    font-family: sans-serif;
     font-size: 17px;
     line-height: 1.5em;
     letter-spacing: .5px;
@@ -148,7 +156,6 @@ body{
     background-color: #03e9f4;
     color: #000;
     border: none;
-    font-family: sans-serif;
     margin-left: 30px;
     transition: .2s ease-in-out;
 }
@@ -157,7 +164,6 @@ body{
     background-color: rgb(43, 43, 43);
     color: #fff;
     border: none;
-    font-family: sans-serif;
     transition: .2s ease-in-out;
 }
 
@@ -167,13 +173,7 @@ body{
 
 .footer{
     text-align: center;
-    align-items: center;
-    border-top: 1px;
-    border-color: grey;
-    border-style: solid;
-    border-bottom: hidden;
-    border-left: hidden;
-    border-right: hidden;
+    border-top: 1px solid #666;
 }
 
 .footer-text{
@@ -187,7 +187,7 @@ body{
 .name{
     text-decoration: none;
     color: white;
-    font-weight: bolder; 
+    font-weight: 900; 
     transition: 0.2s ease-in-out; 
 }
 
@@ -195,7 +195,7 @@ body{
     color: #03e9f4;
 }
 
-.heartlogo{
+#heartlogo{
     position: relative;
     top: 7px;
 }
