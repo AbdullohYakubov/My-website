@@ -1,97 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-::selection{
-    color: #03e9f4; 
-}
-
-body{
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;  
-}
-
-.container{
-    box-sizing: border-box;
-    margin: 0 90px;
-    max-width: 1700px;  
-}
-
-.navbar{ 
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    position: relative;
-}
-
-.logo{
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: bolder;
-    transition: 0.2s ease-in-out;
-}
-
-.logo:hover{
-    color:#03e9f4;
-}
-
-.nav{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    width: 500px;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.nav-item{
-    list-style: none;
-}
-
-.nav-link{
-    color: white;
-    text-decoration: none;  
-    transition: 0.4s ease-in-out; 
-}
-
-.nav-link:hover{
-    color: #03e9f4;
-}
-
-.underline{
-    width: 10%;
-    background-color: black;
-    height: 2px;
-    margin: 5px 0;
-    transition: 0.4s ease-in-out
-}
-
-.nav-item:hover > .underline{
-    background-color: #03e9f4;
-    width: 100%;
-}
+/* styles for home section begins */
 
 .intro{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 80px;  
+    padding-top: 55px;  
 }
 
-#name{
+.info_name{
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     cursor: default;
 }
 
-#info{
+.info_age{
     color: rgb(131, 131, 131);
     font-size: 20px;
     font-weight: lighter;
@@ -100,7 +22,7 @@ body{
     cursor: default;
 }
 
-#welcome{
+.info_welcome{
     color: rgb(131, 131, 131);
     font-size: 20px;
     line-height: 1.75em;
@@ -109,25 +31,24 @@ body{
     cursor: default;
 }
 
-.both-buttons{
+.section2_btns{
     display: flex;
-    padding-top: 50px;
+    width: 99%;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.section2-btns{
-    text-decoration: none;
+.section2-btn{
     color:white;
     font-size: 20px;
     letter-spacing: 5px;
-    font-weight: lighter;
     text-transform: uppercase;
-    padding: 30px 70px;
-    margin-right: 15px;
+    padding: 30px 71px;
     background-color:rgb(43, 43, 43);
     transition: .3s ease-in-out;
 }
 
-.section2-btns:hover{
+.section2-btn:hover{
     color: black;
     -webkit-box-reflect: below 5px linear-gradient(transparent, #0007); 
 }
@@ -152,23 +73,158 @@ body{
     background-color:rgb(43, 43, 43) ;
 }
 
-.social-media{
+.social_media_link{
     display: flex;
     justify-content: space-between;
-    width: 45%;
     align-items: center;
-    margin-top: 80px; 
+    width: 45%;
+    margin-top: 75px; 
 }
 
-.social-media svg{
-    transition: 0.3s ease-in-out;
+.social_media_link path{
+    transition: 0.4s ease-in-out;
 }
 
-.social-media svg:hover{
-    transform: scale(1.2);
+.social_media_link svg:hover path{
+    fill: #03e9f4;
 }   
 
 .image{
     width: 500px;
-    border-radius: 100%;
+    border-radius: 50%;
+}
+
+/* styles for about page begins */
+
+#about-me{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    cursor: default;    
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.info-section{
+    font-size: 19px;
+    color: white; 
+    font-weight: 100;
+    margin-left: 50px;
+    line-height: 1.5em;
+    text-align: left;
+    text-align: justify;
+}
+
+.p1{
+    margin-top: 50px;
+}
+
+/* stles for portfolio page begins */
+
+.portfolio_title{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+.portfolio_desc{
+    margin: 20px 0;
+    text-align: center;
+    color: #04E6F1;
+    font-size: 30px;
+    cursor: default;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px 0;
+}
+
+.boxes_left_img{
+    width: 675px;
+    height: 375px;
+}
+
+.boxes_right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px;
+}
+
+.boxes_right_title{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.boxes_right_description{
+    margin-bottom: 35px;
+    color: rgb(170, 170, 170);
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: .5px;
+}
+
+.boxes_right_btns{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes_right_button{
+    padding: 17px 39px; 
+    color: #fff;
+    background-color: rgb(43, 43, 43);
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.boxes_right_button i{
+    margin-left: 3px;
+}
+
+.btn_right{
+    background-color: #03e9f4;
+    color: #000;
+}
+
+.boxes_right_button:hover{
+    opacity: .7;
+}
+
+/* styles for blog section begins */
+
+#blogs{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+#articles{
+    color: #03e9f4;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    cursor: default;
 }

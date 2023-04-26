@@ -1,0 +1,28 @@
+.footer{
+    text-align: center;
+    border-top: 1px solid #666;
+}
+
+.footer-text{
+    font-size: 17px;
+    color: rgb(212, 212, 212); 
+    padding-bottom: 17px; 
+    padding-top: 11px;
+    letter-spacing: 0.5px;
+}
+
+.name{
+    text-decoration: none;
+    color: white;
+    font-weight: 900; 
+    transition: 0.2s ease-in-out; 
+}
+
+.name:hover{
+    color: #03e9f4;
+}
+
+#heartlogo{
+    position: relative;
+    top: 7px;
+}
