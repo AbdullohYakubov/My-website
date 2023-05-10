@@ -149,19 +149,23 @@
 .boxes{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin: 75px 0;
 }
 
+.boxes_left{
+    width: 50%;
+}
+
 .boxes_left_img{
-    width: 675px;
-    height: 375px;
+    width: 100%;
 }
 
 .boxes_right{
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 40px;
+    /* margin: 40px; */
 }
 
 .boxes_right_title{
@@ -193,6 +197,7 @@
     font-weight: 400;
     letter-spacing: 1px;
     border: none;
+    border-radius: 10px;
     transition: .2s ease-in-out;
 }
 

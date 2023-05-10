@@ -17,11 +17,12 @@ body, html, h1, h2, h3, h4, h5, h6, div, span{
 ul, a{
     list-style: none;
     text-decoration: none;
+    border-radius: 11px;
 }
 
 img{
     user-select: none;
-    border-radius: 3%
+    border-radius: 20px;
 }
 
 ::selection{
@@ -29,7 +30,7 @@ img{
 }
 
 ::-webkit-scrollbar{
-    width: 1px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-thumb{
