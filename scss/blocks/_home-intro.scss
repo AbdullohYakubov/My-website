@@ -1,0 +1,194 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+
+.info_name {
+    color: white;
+    font-size: 75px;
+    cursor: default;
+}
+
+.info_age {
+    color: rgb(131, 131, 131);
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+    cursor: default;
+}
+
+.info_welcome {
+    color: rgb(131, 131, 131);
+    font-size: 20px;
+    line-height: 1.75em;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
+.section2_btns {
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.section2-btn {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 30px 71px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 0;
+    transition: .3s ease-in-out;
+}
+
+.section2-btn:hover {
+    color: black;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0007);
+}
+
+.about,
+.portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.about span,
+.portfolio span {
+    position: absolute;
+}
+
+.about span:nth-child(1),
+.portfolio span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(149, 29, 235, 255);
+    animation: animateButtons1 1s linear infinite;
+}
+
+.about span:nth-child(2),
+.portfolio span:nth-child(2) {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(149, 29, 235, 255);
+    animation: animateButtons2 1s linear .25s infinite;
+}
+
+.about span:nth-child(3),
+.portfolio span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(149, 29, 235, 255);
+    animation: animateButtons3 1s linear .5s infinite;
+}
+
+.about span:nth-child(4),
+.portfolio span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(149, 29, 235, 255);
+    animation: animateButtons4 1s linear .75s infinite;
+}
+
+.portfolio span:nth-child(2n),
+.portfolio span:nth-child(2n+1) {
+    background-color: rgba(23, 243, 84, 255);
+}
+
+@keyframes animateButtons1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animateButtons2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes animateButtons3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes animateButtons4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.about:hover {
+    background-color: rgba(149, 29, 235, 255);
+    box-shadow: 0px 0px 50px 0px rgba(149, 29, 235, 255);
+}
+
+.about::selection {
+    color: rgba(149, 29, 235, 255);
+    background-color: rgb(43, 43, 43);
+}
+
+.portfolio:hover {
+    background-color: rgba(23, 243, 84, 255);
+    box-shadow: 0px 0px 50px 0px rgba(23, 243, 84, 255);
+}
+
+.portfolio::selection {
+    color: rgba(23, 243, 84, 255);
+    background-color: rgb(43, 43, 43);
+}
+
+.social_media_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin-top: 75px;
+}
+
+.social_media_link path {
+    transition: 0.4s ease-in-out;
+}
+
+.social_media_link svg:hover path {
+    fill: #03e9f4;
+}
+
+.image {
+    width: 500px;
+    border-radius: 50%;
+}
